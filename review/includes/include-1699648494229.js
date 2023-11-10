@@ -55,4 +55,3 @@ document.write("<script type='text/javascript' charset='utf-8' src='./resources/
 document.write("<script type='text/javascript' charset='utf-8' src='./resources/screens/d12245cc-1680-458d-89dd-4f0d7fb22724-1699648494229.js'></script>");
 document.write("<script type='text/javascript' charset='utf-8' src='./resources/widgets/widgets-description-1699648494229.js'></script>");
 document.write("<script type='text/javascript' charset='utf-8' src='./resources/slices-1699648494229.js'></script>");
-document.write("<script type='text/javascript' charset='utf-8' src='./resources/scale-1699648494229.js'></script>");

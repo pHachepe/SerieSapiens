@@ -710,13 +710,15 @@
 			var sizeHoritzontal = sizing.thumbs.horizontal;
 			sizeHoritzontal.top = sizeHoritzontal.top - options.scrollSpacing;
 			css = getThumbCss(sizeHoritzontal, options);
-			thumbs.horizontal.css("width", css.width);
+			if (css && thumbs.horizontal)
+				thumbs.horizontal.css("width", css.width);
 		}
 		if (options.hasVertical && options.direction !== 'horizontal') {
 			var sizeVertical = sizing.thumbs.vertical;
 			sizeVertical.left = sizeVertical.left - options.scrollSpacing;
 			css = getThumbCss(sizeVertical, options);
-			thumbs.vertical.css("height", css.height);
+			if (css && thumbs.vertical)
+				thumbs.vertical.css("height", css.height);
 		}
 	},
 	
