@@ -1,0 +1,96 @@
+/* start Pixel 6 css values*/
+body.androidpixel6 #jim-mobile { position:relative; top:0px; left:0px; width:461px; height:838px; margin:auto; }
+body.androidpixel6 #jim-case { background-image: url("../../../../../images/mobile/android/android12/pixel6@2x.png"); height:838px; width:460px; background-size:100% auto; z-index:100; /*must be over keyboards and comment bubbles*/ position:absolute; pointer-events:none; }
+body.androidpixel6 #jim-mobile #simulation { position: relative; height: 100%; overflow:hidden; }
+body.androidpixel6 #jim-mobile .ui-page { overflow:hidden; }
+
+/* orientation values */
+body.androidpixel6 #jim-mobile.landscape { height:460px; width:839px; }
+body.androidpixel6 #jim-case.portrait { transform:rotate(0deg); transform-origin:auto; }
+body.androidpixel6 #jim-case.landscape { top:41px; left:11px; transform:rotate(-90deg); transform-origin:57% 29% 0; }
+body.androidpixel6 #jim-container.portrait { position: absolute; top: 27px; left: 24px; width: 412px; height: 778px; }
+body.androidpixel6 #jim-container.landscape { position: absolute; top: 80px; left: 27px; width: 778px; height: 412px; }
+
+/* KEYBOARD PORTRAIT VALUES */
+/* custom keyboard */
+.androidpixel6 .portrait #jim-android-kb {height: 230px;  background-color: #F8F4F8;}
+.androidpixel6 .portrait #jim-android-kb .row > div {background-color: #FEFEFE;}
+
+/*Special rules for numbers and first key of the row */
+.androidpixel6 .portrait #jim-android-kb #letters .row:nth-child(2) > div:first-child { margin-left: 7%; }
+.androidpixel6 .portrait #jim-android-kb #email .row:nth-child(2) > div:first-child { margin-left: 7%; }
+.androidpixel6 .portrait #jim-android-kb #url .row:nth-child(2) > div:first-child { margin-left: 7%; }
+
+/* Keyboard special keys */
+.androidpixel6 .portrait #jim-android-kb .row > div.space { width:37.25%; border-radius: 4px; padding-bottom: 5.5px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.num { padding-top: 12px; padding-bottom: 4px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.return { background-color: #9CCAFE; margin-left:2%; border-radius: 50px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.numbers { background-color: #BCC7DD; border-radius: 50px; padding-top: 13px; padding-bottom: 3px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.shift { background-color: #D5E3F7;}
+.androidpixel6 .portrait #jim-android-kb .row > div.shift { padding-top: 7px; padding-bottom: 8.5px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.backspace { background-color: #D5E3F7; }
+.androidpixel6 .portrait #jim-android-kb .row > div.signs { background-color: #D5E3F7; padding-top: 11.25px;}
+.androidpixel6 .portrait #jim-android-kb #signs .row > div.numbers { border-radius: 10%; padding-top: 12.75px; padding-bottom: 2.5px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.letters { background-color: #BCC7DD; border-radius: 50px; padding-top: 11px; padding-bottom: 2px;}
+.androidpixel6 .portrait #jim-android-kb .row > div.char-code-44 {background-color: #D5E3F7;} /* character: , */
+.androidpixel6 .portrait #jim-android-kb .row > div.char-code-46 {background-color: #D5E3F7;} /* character: . */
+.androidpixel6 .portrait #jim-android-kb .row > div.char-code-60 {background-color: #D5E3F7;} /* character: < */
+.androidpixel6 .portrait #jim-android-kb .row > div.char-code-62 {background-color: #D5E3F7;} /* character: > */
+.androidpixel6 .portrait #jim-android-kb #url .row > div.char-code-47 {background-color: #D5E3F7;} /* character: \ */
+.androidpixel6 .portrait #jim-android-kb #email .row > div.char-code-64 {background-color: #D5E3F7;} /* character: @ */
+
+.androidpixel6 .portrait #jim-android-kb .row > div.return > div.background-image-key { background-position: -110px -1px;}
+
+/* Bubble */
+.androidpixel6 .portrait #jim-android-kb .divBubble { top: -100px; left: -30%; background-color: #FEFEFE; width:158%; height:51.37px;}
+.androidpixel6 .portrait #jim-android-kb .row:nth-child(1) > div:first-child > div.divBubble {left: -4%;}
+.androidpixel6 .portrait #jim-android-kb .row:nth-child(1) > div:last-child > div.divBubble {left: -54%;}
+.androidpixel6 .portrait #jim-android-kb #numbers .row:nth-child(1) > div:first-child > div.divBubble {left: -4%;}
+.androidpixel6 .portrait #jim-android-kb #signs .row:nth-child(1) > div:first-child > div.divBubble {left: -4%;}
+.androidpixel6 .portrait #jim-android-kb #numbers .row:nth-child(1) > div:last-child > div.divBubble {left: -54%;}
+.androidpixel6 .portrait #jim-android-kb #signs .row:nth-child(1) > div:last-child > div.divBubble {left: -54%;}
+.androidpixel6 .portrait #jim-android-kb #numbers .row:nth-child(2) > div:first-child > div.divBubble {left: -4%;}
+.androidpixel6 .portrait #jim-android-kb #signs .row:nth-child(2) > div:first-child > div.divBubble {left: -4%;}
+.androidpixel6 .portrait #jim-android-kb #numbers .row:nth-child(2) > div:last-child > div.divBubble {left: -54%;}
+.androidpixel6 .portrait #jim-android-kb #signs .row:nth-child(2) > div:last-child > div.divBubble {left: -54%;}
+
+/* Pressed keys*/
+.androidpixel6 .portrait #jim-android-kb .row > div.pressed {background-color: #A6A6A6;}
+.androidpixel6 .portrait #jim-android-kb #url .row > div.pressed {background-color: #A6A6A6;}
+.androidpixel6 .portrait #jim-android-kb #email .row > div.pressed {background-color: #A6A6A6;}
+
+/* KEYBOARD LANDSCAPE VALUES */
+.androidpixel6 .landscape #jim-android-kb {height: 169px; background-color: #F8F4F8;}
+.androidpixel6 .landscape #jim-android-kb .row > div {background-color: #FEFEFE; padding-top: 0.35%; padding-bottom: 0.15%;}
+
+/*Special rules for numbers and first key of the row*/
+.androidpixel6 .landscape #jim-android-kb #letters .row:nth-child(2) > div:first-child { margin-left: 18.9%; }
+.androidpixel6 .landscape #jim-android-kb #email .row:nth-child(2) > div:first-child { margin-left: 18.9%; }
+.androidpixel6 .landscape #jim-android-kb #url .row:nth-child(2) > div:first-child { margin-left: 18.9%; }
+
+/* Keyboard special keys */
+.androidpixel6 .landscape #jim-android-kb .row > div.backspace { background-color: #D5E3F7;}
+.androidpixel6 .landscape #jim-android-kb .row > div.num { height: 25px; padding-top: 6px; padding-bottom: 2px;}
+.androidpixel6 .landscape #jim-android-kb .row > div.shift { background-color: #D5E3F7; padding-top: 2px; padding-bottom: 1.5px;}
+.androidpixel6 .landscape #jim-android-kb .row > div.signs { background-color: #D5E3F7; font-size:19px; padding-top: 3px; padding-bottom: 0.5px;}
+.androidpixel6 .landscape #jim-android-kb .row > div.space { width:27.25%; font-size:14px; border-radius: 4px; padding-bottom: 1.5px; padding-top: 7px; height: 25px;}
+.androidpixel6 .landscape #jim-android-kb .row > div.return { background-color: #9CCAFE; border-radius: 50px;}
+.androidpixel6 .landscape #jim-android-kb .row > div.numbers { background-color: #BCC7DD; border-radius: 50px; height: 28px; padding-top: 5px; padding-bottom: 0px;}
+.androidpixel6 .landscape #jim-android-kb #signs .row > div.numbers { border-radius: 10%;}
+.androidpixel6 .landscape #jim-android-kb .row > div.letters { background-color: #BCC7DD; border-radius: 50px; padding-top: 4px; padding-bottom: 0px;} 
+.androidpixel6 .landscape #jim-android-kb .row > div.char-code-44 {background-color: #D5E3F7;} /* character: , */
+.androidpixel6 .landscape #jim-android-kb .row > div.char-code-46 {background-color: #D5E3F7;} /* character: . */
+.androidpixel6 .landscape #jim-android-kb .row > div.char-code-60 {background-color: #D5E3F7;} /* character: < */
+.androidpixel6 .landscape #jim-android-kb .row > div.char-code-62 {background-color: #D5E3F7;} /* character: > */
+.androidpixel6 .landscape #jim-android-kb #url .row > div.char-code-47 {background-color: #D5E3F7;} /* character: \ */
+.androidpixel6 .landscape #jim-android-kb #email .row > div.char-code-64 {background-color: #D5E3F7;} /* character: @ */
+
+.androidpixel6 .landscape #jim-android-kb .row > div.return > div.background-image-key { background-position: -110px -2px;}
+
+/* Bubble */
+.androidpixel6 .landscape #jim-android-kb .divBubble { top: -96px; left: 0%; background-color: #FEFEFE; width:100%; height:51.37px;}
+
+/* Pressed keys*/
+.androidpixel6 .landscape #jim-android-kb .row > div.pressed {background-color: #A6A6A6;}
+.androidpixel6 .landscape #jim-android-kb #url .row > div.pressed {background-color: #A6A6A6;}
+.androidpixel6 .landscape #jim-android-kb #email .row > div.pressed {background-color: #A6A6A6;}
